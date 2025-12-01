@@ -1,0 +1,40 @@
+{
+	"name": "@scottbaggett/color-engine",
+	"version": "0.1.0",
+	"description": "Perceptual OKLCH color palette engine with independent curves, RYBittern, harmony, and seedable randomness",
+	"author": "Scott Baggett",
+	"license": "MIT",
+	"type": "module",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": ["dist"],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.js"
+		}
+	},
+	"scripts": {
+		"build": "tsup",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"lint": "biome check .",
+		"lint:fix": "biome check . --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"tsup": "^8.5.1",
+		"typescript": "^5.9.3",
+		"vitest": "^2.1.9"
+	},
+	"keywords": [
+		"color",
+		"oklch",
+		"palette",
+		"generative",
+		"design-system",
+		"rybittern"
+	]
+}
