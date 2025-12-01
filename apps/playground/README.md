@@ -1,6 +1,4 @@
-# TanStack + Vite + Tailwind + ShadCN Starter
-
-A modern, full-featured starter template for building React applications with TanStack Router, Vite, Tailwind CSS, and ShadCN UI.
+# Color Engine Website
 
 ## Tech Stack
 
@@ -67,30 +65,30 @@ src/
 - Path aliases (`@/*` maps to `src/*`)
 - Router DevTools in development
 
-## Surface Colors 
+## Surface Colors
 
 This template uses [Radix UI Colors](https://www.radix-ui.com/colors) for a consistent surface color system. The gray palette provides 12 steps that automatically adapt to light and dark modes.
 
 [Radix Custom Palette Generator](https://www.radix-ui.com/colors/custom)
 
-| Surface | Theme Token | Usage |
-|---------|-------------|-------|
-| `surface-1` | `background` | App background |
-| `surface-2` | `card`, `popover` | Cards, elevated surfaces |
-| `surface-3` | `secondary` | Subtle backgrounds |
-| `surface-4` | `muted` | Muted elements |
-| `surface-5` | `accent`, `border` | Borders, dividers |
-| `surface-6` | `input` | Input backgrounds |
-| `surface-7` | `ring` | Focus rings |
-| `surface-8` | — | Solid backgrounds |
-| `surface-9-11` | — | Secondary text |
-| `surface-12` | `foreground`, `primary` | Primary text |
+| Surface        | Theme Token             | Usage                    |
+| -------------- | ----------------------- | ------------------------ |
+| `surface-1`    | `background`            | App background           |
+| `surface-2`    | `card`, `popover`       | Cards, elevated surfaces |
+| `surface-3`    | `secondary`             | Subtle backgrounds       |
+| `surface-4`    | `muted`                 | Muted elements           |
+| `surface-5`    | `accent`, `border`      | Borders, dividers        |
+| `surface-6`    | `input`                 | Input backgrounds        |
+| `surface-7`    | `ring`                  | Focus rings              |
+| `surface-8`    | —                       | Solid backgrounds        |
+| `surface-9-11` | —                       | Secondary text           |
+| `surface-12`   | `foreground`, `primary` | Primary text             |
 
 ShadCN components automatically use the correct surface colors through theme tokens. You can also use surface colors directly:
 
 ```tsx
 <div className="bg-surface-2 text-surface-12 border-surface-5">
-  Card content
+    Card content
 </div>
 ```
 
@@ -105,11 +103,11 @@ Create a new file in `src/routes/`:
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/contact")({
-  component: Contact,
+    component: Contact,
 });
 
 function Contact() {
-  return <div>Contact Page</div>;
+    return <div>Contact Page</div>;
 }
 ```
 
