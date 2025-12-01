@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ColorEngine } from "./src/index";
+import { ColorEngine } from "../src/index";
 
 describe("ColorEngine", () => {
   it("generates OKLCH ramp with correct steps", () => {
